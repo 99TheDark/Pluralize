@@ -7,7 +7,9 @@ function replaceEnd(str, count, end) {
 }
 
 export function pluralize(str) {
-    if(end(str, 2) == "us") {
+    if(end(str, 4) == "esis") {
+        return replaceEnd(str, 4, "eses");
+    } else if(end(str, 2) == "us") {
         return replaceEnd(str, 2, "i");
     } else if(["s", "x"].includes(end(str, 1))) {
         return str + "es";

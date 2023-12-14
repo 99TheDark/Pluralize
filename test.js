@@ -11,4 +11,7 @@ console.log([
     "tone",
     "score",
     "ski",
+    "antithesis",
+    "quarter",
+    "parenthesis"
 ].map(e => `${ e } -> ${ pluralize(e) }`).join("\n"));
